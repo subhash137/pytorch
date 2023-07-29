@@ -6,7 +6,7 @@ If a function gets defined once and could be used over and over, it'll go in her
 import torch
 import matplotlib.pyplot as plt
 import numpy as np
-
+import seaborn as sns
 from torch import nn
 
 import os
@@ -73,6 +73,33 @@ def plot_decision_boundary(model: torch.nn.Module, X: torch.Tensor, y: torch.Ten
     plt.show()
 
 
+def show_separation(model, X,y,save=False, name_to_save=""):
+    sns.set(style="white")
+
+    xx, yy = np.mgrid[-1.5:2.5:.01, -1.:1.5:.01]
+    grid = np.c_[xx.ravel(), yy.ravel()]
+    batch = torch.from_numpy(grid).type(torch.float32)
+    with torch.no_grad():
+        probs = torch.sigmoid(model(batch).reshape(xx.shape))
+        probs = probs.numpy().reshape(xx.shape)
+
+    f, ax = plt.subplots(figsize=(16, 10))
+    ax.set_title("Decision boundary", fontsize=14)
+    contour = ax.contourf(xx, yy, probs, 25, cmap="RdBu",
+                          vmin=0, vmax=1)
+    ax_c = f.colorbar(contour)
+    ax_c.set_label("$P(y = 1)$")
+    ax_c.set_ticks([0, .25, .5, .75, 1])
+
+    ax.scatter(X[100:,0], X[100:, 1], c=y[100:], s=50,
+               cmap="RdBu", vmin=-.2, vmax=1.2,
+               edgecolor="white", linewidth=1)
+
+    ax.set(xlabel="$X_1$", ylabel="$X_2$")
+    if save:
+        plt.savefig(name_to_save)
+    else:
+        plt.show()
 # Plot linear data or training and test and predictions (optional)
 def plot_predictions(
     train_data, train_labels, test_data, test_labels, predictions=None
@@ -294,3 +321,4 @@ def download_data(source: str,
             os.remove(data_path / target_file)
     
     return image_path
+
