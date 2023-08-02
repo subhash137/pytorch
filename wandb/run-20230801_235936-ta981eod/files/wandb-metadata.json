@@ -1,0 +1,76 @@
+{
+    "os": "Linux-5.15.0-75-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-08-01T18:29:41.625079",
+    "startedAt": "2023-08-01T18:29:36.165269",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "git@github.com:subhash137/pytorch.git",
+        "commit": "8ae8de9f37752a73ebee505c1b594b235e5ac755"
+    },
+    "email": "subhash6300101199@gmail.com",
+    "root": "/home/subhash/pytorch",
+    "host": "ubuntu1",
+    "username": "subhash",
+    "executable": "/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2488.55875,
+        "min": 400.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2342.099,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2547.405,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2898.723,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1888.668,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1903.995,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2320.76,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2262.13,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1812.078,
+            "min": 400.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "total": 76.8539810180664,
+        "used": 63.8601188659668
+    },
+    "memory": {
+        "total": 15.385684967041016
+    }
+}

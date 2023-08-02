@@ -1,0 +1,39 @@
+2023-08-02 00:02:18 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd2283ccc70>: Failed to resolve 'o151352.ingest.sentry.io' ([Errno -3] Temporary failure in name resolution)")': /api/4504800232407040/envelope/
+2023-08-02 00:02:18 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd22a6d9910>: Failed to resolve 'o151352.ingest.sentry.io' ([Errno -3] Temporary failure in name resolution)")': /api/4504800232407040/envelope/
+2023-08-02 00:02:18 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd228433850>: Failed to resolve 'o151352.ingest.sentry.io' ([Errno -3] Temporary failure in name resolution)")': /api/4504800232407040/envelope/
+2023-08-02 00:02:18 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd2283ad130>: Failed to resolve 'o151352.ingest.sentry.io' ([Errno -3] Temporary failure in name resolution)")': /api/4504800232407040/envelope/
+2023-08-02 00:02:18 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd2283ad850>: Failed to resolve 'o151352.ingest.sentry.io' ([Errno -3] Temporary failure in name resolution)")': /api/4504800232407040/envelope/
+2023-08-02 00:02:18 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd2283adc40>: Failed to resolve 'o151352.ingest.sentry.io' ([Errno -3] Temporary failure in name resolution)")': /api/4504800232407040/envelope/
+2023-08-02 00:08:56 INFO === Launch-agent called with kwargs {'ctx': <click.core.Context object at 0x7f22e9c2fdc0>, 'project': None, 'entity': 'straw_hat', 'queues': ('new',), 'max_jobs': None, 'config': None, 'url': None}  CLI Version: 0.15.7 ===
+2023-08-02 00:10:42 INFO Running runs: []
+2023-08-02 00:10:43 INFO Agent received command: run
+2023-08-02 00:10:43 INFO Agent starting run with config:
+	architecture: Linear
+	epochs: 16
+	lauyer_2_size: 10
+	layer_1_size: 13
+	learning_rate: 0.007201338362256696
+2023-08-02 00:10:43 INFO About to run command: /usr/bin/env python train.py --architecture=Linear --epochs=16 --lauyer_2_size=10 --layer_1_size=13 --learning_rate=0.007201338362256696
+2023-08-02 00:10:48 INFO Running runs: ['99tw7slp']
+2023-08-02 00:10:48 INFO Cleaning up finished run: 99tw7slp
+2023-08-02 00:10:48 INFO Agent received command: run
+2023-08-02 00:10:48 INFO Agent starting run with config:
+	architecture: Linear
+	epochs: 6
+	lauyer_2_size: 23
+	layer_1_size: 11
+	learning_rate: 0.007337649912312223
+2023-08-02 00:10:48 INFO About to run command: /usr/bin/env python train.py --architecture=Linear --epochs=6 --lauyer_2_size=23 --layer_1_size=11 --learning_rate=0.007337649912312223
+2023-08-02 00:10:53 INFO Running runs: ['8qc6dfin']
+2023-08-02 00:10:53 INFO Cleaning up finished run: 8qc6dfin
+2023-08-02 00:10:54 INFO Agent received command: run
+2023-08-02 00:10:54 INFO Agent starting run with config:
+	architecture: Linear
+	epochs: 20
+	lauyer_2_size: 27
+	layer_1_size: 30
+	learning_rate: 0.008657317428092249
+2023-08-02 00:10:54 INFO About to run command: /usr/bin/env python train.py --architecture=Linear --epochs=20 --lauyer_2_size=27 --layer_1_size=30 --learning_rate=0.008657317428092249
+2023-08-02 00:10:59 INFO Running runs: ['n5jqw5x3']
+2023-08-02 00:10:59 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2023-08-02 00:10:59 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true

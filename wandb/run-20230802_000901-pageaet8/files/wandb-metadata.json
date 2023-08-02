@@ -1,0 +1,75 @@
+{
+    "os": "Linux-5.15.0-75-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-08-01T18:39:06.145704",
+    "startedAt": "2023-08-01T18:39:01.381611",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "launch-agent",
+        "-e",
+        "straw_hat",
+        "-q",
+        "new"
+    ],
+    "state": "running",
+    "host": "ubuntu1",
+    "username": "subhash",
+    "executable": "/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1789.30775,
+        "min": 400.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1907.138,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1716.624,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1736.752,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1731.373,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1807.788,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1888.395,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1687.216,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1839.176,
+            "min": 400.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "total": 76.8539810180664,
+        "used": 63.839263916015625
+    },
+    "memory": {
+        "total": 15.385684967041016
+    }
+}
